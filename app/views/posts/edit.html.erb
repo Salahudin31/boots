@@ -1,0 +1,11 @@
+<% provide(:page_tittle, "Edit #{@post.tittle}") %>
+
+<div class="mx-auto text-center">
+	<h1 class="text-white mb-5">Editing Post</h1>
+
+	<%= render 'form', post: @post %>
+
+	
+	<h4><%= link_to 'Show', @post %> |
+	<%= link_to 'Back', posts_path %></h4>
+</div>
